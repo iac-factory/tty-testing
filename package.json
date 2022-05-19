@@ -1,0 +1,22 @@
+{
+    "name": "@iac-factory/tty-testing",
+    "version": "0.0.1",
+    "private": true,
+    "description": "...",
+    "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
+    "license": "BSD-3-Clause",
+    "scripts": {
+        "prestart": "tsc --build tsconfig.json",
+        "start": "node $( dirname $( npm root ) ) --wrapper --execute --spawn --shell"
+    },
+    "dependencies": {
+        "ansi-colors": "^4.1.3",
+        "esm": "^3.2.25"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.34",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.4",
+        "@types/esm": "^3.2.0"
+    }
+}
